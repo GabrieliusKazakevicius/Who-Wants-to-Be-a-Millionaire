@@ -110,11 +110,22 @@ var MillionaireModel = function(data) {
  		if(self.transitioning)
  			return;
  		self.transitioning = true;
- 		if(self.questions[self.level() - 1].correct == index) {
- 			self.rightAnswer(elm);
- 		} else {
- 			self.wrongAnswer(elm);
- 		}
+
+		let correct = self.questions[self.level() - 1].correct;
+		if(Array.isArray(correct)){
+			if(self.questions[self.level() - 1].correct.contains(index)) {
+				self.rightAnswer(elm);
+			} else {
+				self.wrongAnswer(elm);
+			}	
+		}
+		else{
+			if(self.questions[self.level() - 1].correct == index) {
+				self.rightAnswer(elm);
+			} else {
+				self.wrongAnswer(elm);
+			}
+		}
  	}
 
  	// Executes the proceedure of a correct answer guess, moving
