@@ -10,7 +10,7 @@
 		                "Šiaip prikolnas žmogus, kuris mokėsi daugiau nei tu.",
 		                "Žmogus, kuris organizuoja veiksmus atvykus i gaisrą."
 		            ],
-		            "correct" : [0, 1, 2]
+		            "correct" : 1
 		        },
 		        {
 		            "question" : "Vilniaus valdybos viršininko šaukinys.",
@@ -116,7 +116,7 @@
 						"Tomaš Panasevič",
 						"Linas Petronis"
 				    ],
-				    "correct": 1
+				    "correct": [0, 1]
 				},
 				{
 					
@@ -137,7 +137,7 @@
 				        "Linas Petronis",
 				        "Ruda glowa"
 				    ],
-				    "correct": 2
+				    "correct": [1, 2, 3]
 				},
 				{
 				    "question": "Ugniagesio profesijos atsiradimo Lietuvoje data.",
