@@ -113,7 +113,7 @@ var MillionaireModel = function(data) {
 
 		let correct = self.questions[self.level() - 1].correct;
 		if(Array.isArray(correct)){
-			if(self.questions[self.level() - 1].correct.contains(index)) {
+			if(self.questions[self.level() - 1].correct.indexOf(index) !== -1) {
 				self.rightAnswer(elm);
 			} else {
 				self.wrongAnswer(elm);
